@@ -44,4 +44,4 @@ declare -xr COMPOSE_PROJECT_NAME="${COMPOSE_PROJECT_NAME:-galaxy_ng}"
 declare -xr COMPOSE_CONTEXT=".."
 declare -xr LOCK_REQUIREMENTS="${LOCK_REQUIREMENTS:-1}"
 
-exec docker-compose "${compose_args[@]}" "$@"
+exec docker-compose --verbose "${compose_args[@]}" "$@"
